@@ -1,0 +1,15 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "simple sample async",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mashdas",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2",
+    "yargs": "^16.2.0"
+  }
+}
