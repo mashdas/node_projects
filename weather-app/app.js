@@ -22,7 +22,7 @@ yargs.command({
 
 const geo_dude=(location,callback)=>{
 	const encData=encodeURIComponent(location)
-	let geo_api_key='pk.eyJ1IjoibWFzaGRhczk0IiwiYSI6ImNrbW5pM2VodDBpMTQydnBldXBiM2duankifQ.YUJ2gS2eVTmKg1ijClDCzQ'
+	let geo_api_key='YOUR_API_KEY'
 	const geo_url="https://api.mapbox.com/geocoding/v5/mapbox.places/"+encData+".json?access_token="+geo_api_key
 	request({url:geo_url,json:true},(err,res)=>{
 		let lat=res.body.features[0].center[1]
